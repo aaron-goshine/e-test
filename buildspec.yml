@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - pip install --upgrade pip
+      - pip install aws-sam-cli
+  pre_build:
+    commands:
+      - echo "installing npm packages "
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+      - . ~/.nvm/nvm.sh
+      - nvm install node
+      - npm install
+      - echo "runing test"
+      - npm run e2e-test
+
+  build:
+    commands:
+     - echo "build complete"
+  post_build:
+    commands:
+      - echo deployment completed at `date`
+
+artifacts:
+  type: zip
+  files:
+    - tes.yml

@@ -1,0 +1,111 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "LoginPDMS",
+    "line": 2,
+    "id": "loginpdms",
+    "tags": [],
+    "uri": "features/login-pdms.feature",
+    "elements": [
+      {
+        "id": "loginpdms;log-into--pdms-user-dashboard",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Log into  PDMS User Dashboard",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user navigate to the form",
+            "match": {
+              "location": "step-definitions/steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2720000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the title should be \"Umbraco - content1.qa.travcorpservices.com\"",
+            "match": {
+              "location": "step-definitions/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 518000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user should populate the form",
+            "match": {
+              "location": "step-definitions/steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "clicked on the submit button",
+            "match": {
+              "location": "step-definitions/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the title should be 'Content - content1.qa.travcorpservices.com'",
+            "match": {
+              "location": "step-definitions/steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the left navigation should visible",
+            "match": {
+              "location": "step-definitions/steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "cucumber.conf.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
