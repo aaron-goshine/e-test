@@ -4,10 +4,10 @@
   "description": "End to end test content 1 ttc",
   "main": "index.js",
   "scripts": {
-    "test:chrome": "NIGHTWATCH_ENV=chrome npm test",
-    "test:firefox": "NIGHTWATCH_ENV=firefox npm test",
-    "e2e-test": "mkdir -p report && cucumber-js --require-module @babel/register --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
-    "debug": "DEBUG=nightwatch-api NIGHTWATCH_ENV=chrome NIGHTWATCH_VERBOSE=true node --inspect ./node_modules/cucumber/bin/cucumber-js --require-module @babel/register --require cucumber.conf.js --require ./__tests__/step-definitions --format node_modules/cucumber-pretty"
+    "test:chrome": "NIGHTWATCH_ENV=chrome npm run test",
+    "test:firefox": "NIGHTWATCH_ENV=firefox npm run test",
+    "test": "mkdir -p report && cucumber-js --require-module @babel/register --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
+    "debug": "DEBUG=nightwatch-api NIGHTWATCH_ENV=chrome NIGHTWATCH_VERBOSE=true node --inspect ./node_modules/cucumber/bin/cucumber-js --require-module @babel/register --require cucumber.conf.js --require ./step-definitions --format node_modules/cucumber-pretty"
   },
   "repository": "git@github.com:travcorp/pdms-umbraco.git",
   "author": "Aaron Goshine <greenlig@gmail.com>",
