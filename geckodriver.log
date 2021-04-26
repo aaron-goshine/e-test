@@ -1,0 +1,7 @@
+1619433561780	geckodriver	INFO	Listening on 127.0.0.1:4444
+1619433562020	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/bv/fg31xd7s2658ht8_lmnfxq580000gp/T/rust_mozprofileLOTG5B"
+*** You are running in headless mode.
+1619433562462	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619433564398	Marionette	INFO	Listening on port 49814
+1619433568696	Marionette	INFO	Stopped listening on port 49814
